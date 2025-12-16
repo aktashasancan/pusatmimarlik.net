@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="dark" lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hakkımızda Sayfası</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="font-display">
+    <div
+        class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 dark:border-b-[#232f48] px-4 sm:px-10 py-3">
+                        <a href="../anaekran_sayfası/code.html" class="flex items-center gap-4 text-white group">
+                            <div
+                                class="h-10 w-auto bg-white p-1 rounded-sm flex items-center justify-center transition-transform transform group-hover:scale-105">
+                                <img src="../images/pusatlogo.jpg" alt="Pusat Mimarlık"
+                                    class="h-full w-auto object-contain" />
+                            </div>
+                            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Pusat Mimarlık
+                            </h2>
+                        </a>
+                        <div class="hidden md:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal"
+                                    href="../anaekran_sayfası/code.html">Ana Sayfa</a>
+                                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal"
+                                    href="../çalışmalarımız_sayfası/calısmalarımız.html">Projeler</a>
+                                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal"
+                                    href="../hizmetlerimiz_sayfası/hizmetlerimiz.html">Hizmetler</a>
+                                <a class="text-white text-sm font-bold leading-normal" href="#">Hakkımızda</a>
+                                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal"
+                                    href="../i̇letişim_sayfası/iletişim.html">İletişim</a>
+                            </div>
+                            <button onclick="window.location.href='../i̇letişim_sayfası/iletişim.html'"
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                <span class="truncate">Teklif Alın</span>
+                            </button>
+                        </div>
+                    </header>
+                    <main class="flex flex-col gap-10 md:gap-16">
+                        <div class="@container pt-10">
+                            <div class="@[480px]:p-4">
+                                <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+                                    data-alt="A modern architectural building at dusk, symbolizing innovation and construction expertise."
+                                    style='background-image: linear-gradient(rgba(16, 22, 34, 0.7) 0%, rgba(16, 22, 34, 0.9) 100%), url("../images/pusatlogo.jpg");'>
+                                    <div class="flex flex-col gap-2 text-center">
+                                        <h1
+                                            class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                            Hakkımızda
+                                        </h1>
+                                        <h2
+                                            class="text-white/90 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                            Geleceği İnşa Ediyoruz</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p
+                            class="text-white/80 dark:text-white/70 text-base font-normal leading-relaxed pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">
+                            Pusat Mimarlık, inşaat, mühendislik ve mimarlık sektörlerinde uzmanlaşmış, yenilikçi ve
+                            güvenilir çözümler sunan lider bir kuruluştur. Kurulduğumuz günden bu yana, kaliteden ödün
+                            vermeden sayısız projeye imza attık.
+                        </p>
+                        <div class="flex flex-col gap-10 px-4 py-10 @container">
+                            <div class="flex flex-col gap-4 text-center items-center">
+                                <h2
+                                    class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    Değerlerimizle Fark Yaratıyoruz
+                                </h2>
+                                <p
+                                    class="text-white/80 dark:text-white/70 text-base font-normal leading-relaxed max-w-[720px]">
+                                    Başarımızın temelinde, her projemize yansıttığımız misyonumuz, vizyonumuz ve temel
+                                    değerlerimiz yatmaktadır. Bu ilkeler, çalışmalarımızın her aşamasında bize rehberlik
+                                    eder.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 p-0">
+                                <div
+                                    class="flex flex-1 gap-4 rounded-xl border border-white/10 dark:border-[#324467] bg-white/5 dark:bg-[#192233] p-6 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 32px;">rocket_launch</span></div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3 class="text-white text-lg font-bold leading-tight">Misyonumuz</h3>
+                                        <p class="text-white/70 dark:text-[#92a4c9] text-sm font-normal leading-normal">
+                                            Müşterilerimiz için en yüksek kalitede, sürdürülebilir ve estetik yapılar
+                                            inşa etmek.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-4 rounded-xl border border-white/10 dark:border-[#324467] bg-white/5 dark:bg-[#192233] p-6 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 32px;">visibility</span></div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3 class="text-white text-lg font-bold leading-tight">Vizyonumuz</h3>
+                                        <p class="text-white/70 dark:text-[#92a4c9] text-sm font-normal leading-normal">
+                                            Sektörde yenilikçiliğin ve mükemmelliğin sembolü olarak tanınmak.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-4 rounded-xl border border-white/10 dark:border-[#324467] bg-white/5 dark:bg-[#192233] p-6 flex-col">
+                                    <div class="text-primary"><span class="material-symbols-outlined"
+                                            style="font-size: 32px;">diamond</span></div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3 class="text-white text-lg font-bold leading-tight">Değerlerimiz</h3>
+                                        <p class="text-white/70 dark:text-[#92a4c9] text-sm font-normal leading-normal">
+                                            Dürüstlük, müşteri odaklılık, takım çalışması ve sürekli gelişim ilkelerine
+                                            bağlı kalmak.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-10">
+                            <div
+                                class="flex flex-col gap-6 items-center justify-center text-center bg-white/5 dark:bg-[#192233] p-8 md:p-12 rounded-xl border border-white/10 dark:border-[#324467]">
+                                <h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em]">Projenizi
+                                    Hayata Geçirelim</h2>
+                                <p class="text-white/80 dark:text-white/70 max-w-xl">
+                                    Hayalinizdeki projeyi gerçeğe dönüştürmek için buradayız. Uzman ekibimizle tanışın
+                                    ve projenizin potansiyelini keşfedin.
+                                </p>
+                                <div class="flex flex-wrap gap-4 justify-center">
+                                    <button
+                                        onclick="window.location.href='../çalışmalarımız_sayfası/calısmalarımız.html'"
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                        <span class="truncate">Projelerimizi İnceleyin</span>
+                                    </button>
+                                    <button onclick="window.location.href='../i̇letişim_sayfası/iletişim.html'"
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-white/10 dark:bg-[#232f48] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-white/20 dark:hover:bg-[#324467] transition-colors">
+                                        <span class="truncate">İletişime Geçin</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer class="mt-10 border-t border-solid border-white/10 dark:border-b-[#232f48] px-10 py-8">
+                        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                            <div class="flex items-center gap-4">
+                                <div class="h-8 w-auto bg-white p-0.5 rounded-sm flex items-center justify-center">
+                                    <img src="../images/pusatlogo.jpg" alt="Pusat Mimarlık"
+                                        class="h-full w-auto object-contain" />
+                                </div>
+                                <p class="text-white/60 text-sm">© 2024 Pusat Mimarlık. Tüm hakları saklıdır.</p>
+                            </div>
+
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
